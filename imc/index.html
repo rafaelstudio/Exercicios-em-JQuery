@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ICM e Menu Drop Dawn</title>
+        <style type="text/css">
+            body{
+                margin: 0;
+            }
+
+            .menu{
+                height: 40px;
+                background-color: #000;
+                color: #FFF;
+            }
+            ul{margin: 0;padding: 0;list-style: none;}
+            li{float: left;padding:0px 20px;line-height: 40px; cursor: pointer;}
+            .menu1{
+                height: 40px;
+            }
+            .menu2{
+                position: absolute;
+                width: 150px;
+                height: 120px;
+                background-color:#000;
+                display: none;
+            }
+            .horaEscolha{
+                width: 150px;
+                height: auto;
+                background-color: #eee;
+                position: absolute;
+                display: none;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <ul>
+                <li>
+                    <div class="menu1">Home</div>
+                    <div class="menu2">
+                        Opcao1<br>
+                        opcao1<br>
+                        opcao1
+                    </div>
+                </li>
+                <li>Menu 1</li>
+                <li>
+                        <div class="menu1">Menu 2</div>
+                        <div class="menu2">
+                            Opcao2<br>
+                            opcao2<br>
+                            opcao2
+                        </div>
+                    </li>
+                <li>Menu 3</li>
+                <li>
+                        <div class="menu1">Menu 4</div>
+                        <div class="menu2">
+                            Opcao4<br>
+                            opcao4<br>
+                            opcao4
+                        </div>
+                    </li>
+
+            </ul>
+        </div>
+
+        <!--Calculadora de IMC-->
+        Altura em metros (Ex: 1,70 metros)<br>
+        <input type="text" name="altura" id="altura"/><br><br>
+
+        Peso em quilos<br>
+        <input type="text" name="peso" id="peso"/><br><br>
+
+        <button>Calcular IMC</button> <br><br>
+
+        <div id="resultado"></div>  <br><br>
+
+         <!--Calculadora de IMC-->
+
+        <!--Selecionado de horas-->
+        Hora  01:<br>
+        <input class="hora" type="text" name="hora1" /><br><br>
+
+        Hora 02: <br>
+        <input class="hora" type="text" name="hora2" /><br><br>
+
+        Hora 03: <br>
+        <input class="hora" type="text" name="hora3" /><br><br>
+
+        Hora 04: <br>
+        <input class="hora" type="text" name="hora4" /><br><br>
+        <div class="horaEscolha">
+            <p>Horas Disponiveis</p>
+            <button>08:30</button>
+            <button>09:00</button>
+            <button>10:45</button>
+            <button>12:00</button>
+            <button>13:20</button>
+            <button>16:40</button>
+            <button>20:00</button>
+        </div>
+
+        <!--Selecionado de horas-->
+
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>
