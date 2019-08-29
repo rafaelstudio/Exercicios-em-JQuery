@@ -1,9 +1,9 @@
 $(function(){
 
     $('#Objeto').bind('mousedown', function(){
-        $('#Objeto').css('cursor','grabbing')
-        $('#Objeto').css('background-color','red')
-        $('#Objeto').bind('mousemove',function(e){
+        $(this).css('cursor','grabbing')
+        $(this).css('background-color','red')
+        $(this).bind('mousemove',function(e){
             var x = e.originalEvent.pageX;
             var y = e.originalEvent.pageY;
 
@@ -18,9 +18,9 @@ $(function(){
     });
 
     $('#Objeto').bind('mouseup',function(){
-        $('#Objeto').css('background-color','black')
-        $('#Objeto').css('cursor','grab')
-        $('#Objeto').unbind('mousemove')
+        $(this).css('background-color','black')
+        $(this).css('cursor','grab')
+        $(this).unbind('mousemove')
     })
   
 
